@@ -6,45 +6,183 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="it">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title="Alessandro Dorio - Grafico Art Director Fotografo" description="Portfolio di Alessandro Dorio - Graphic Designer, Art Director e Fotografo specializzato in grafica pubblicitaria, impaginazione editoriale, fotografia still-life e prestampa." />
+		<style>
+			.hero {
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				padding: 6rem 2rem;
+				text-align: center;
+			}
+			.hero h1 {
+				font-size: 3rem;
+				margin: 0 0 1rem 0;
+				font-weight: 800;
+			}
+			.hero .subtitle {
+				font-size: 1.5rem;
+				opacity: 0.9;
+				margin-bottom: 2rem;
+			}
+			.hero .cta {
+				display: inline-block;
+				background: white;
+				color: #667eea;
+				padding: 1rem 2rem;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: bold;
+				margin-top: 1rem;
+				transition: transform 0.3s;
+			}
+			.hero .cta:hover {
+				transform: scale(1.05);
+			}
+			.section {
+				max-width: 1200px;
+				margin: 4rem auto;
+				padding: 0 2rem;
+			}
+			.section h2 {
+				font-size: 2.5rem;
+				margin-bottom: 2rem;
+				text-align: center;
+				color: #2d3748;
+			}
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+			.card {
+				background: white;
+				border-radius: 10px;
+				padding: 2rem;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+				transition: transform 0.3s;
+			}
+			.card:hover {
+				transform: translateY(-5px);
+			}
+			.card h3 {
+				color: #667eea;
+				margin-bottom: 1rem;
+			}
+			.skills {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 1rem;
+				justify-content: center;
+			}
+			.skill-tag {
+				background: #667eea;
+				color: white;
+				padding: 0.5rem 1.5rem;
+				border-radius: 25px;
+				font-weight: 600;
+			}
+			.bio {
+				max-width: 800px;
+				margin: 0 auto;
+				line-height: 1.8;
+				color: #4a5568;
+				text-align: center;
+			}
+			.contact-info {
+				text-align: center;
+				margin-top: 2rem;
+			}
+			.contact-info a {
+				color: #667eea;
+				font-weight: bold;
+				text-decoration: none;
+				margin: 0 1rem;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
+		
+		<section class="hero">
+			<h1>Alessandro Dorio</h1>
+			<p class="subtitle">Grafico Art Director · Fotografo</p>
+			<p>Creatività, precisione e passione al servizio del tuo brand</p>
+			<a href="#contatti" class="cta">Contattami</a>
+		</section>
+
+		<section class="section">
+			<h2>Chi Sono</h2>
+			<p class="bio">
+				Sono un graphic designer e fotografo con oltre 30 anni di esperienza nel settore. 
+				Ho collaborato con alcuni dei maggiori designer, architetti, fotografi e pittori italiani, 
+				specializzandomi in impaginazione editoriale, grafica pubblicitaria, fotografia still-life e reportage.
+				La mia filosofia: coniugare creatività e funzionalità, nel rispetto di tempi e obiettivi.
 			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
+		</section>
+
+		<section class="section">
+			<h2>Servizi</h2>
+			<div class="grid">
+				<div class="card">
+					<h3>📐 Grafica Pubblicitaria</h3>
+					<p>Creazione di pagine pubblicitarie, brochure, cataloghi e materiale promozionale d'impatto</p>
+				</div>
+				<div class="card">
+					<h3>📄 Impaginazione Editoriale</h3>
+					<p>Layout professionale per riviste B2B, libri d'arte e pubblicazioni di settore</p>
+				</div>
+				<div class="card">
+					<h3>📸 Fotografia</h3>
+					<p>Still-life e reportage per prodotti moda, calzature, pelletteria e settore industriale</p>
+				</div>
+				<div class="card">
+					<h3>🖨️ Prestampa</h3>
+					<p>Gestione completa del flusso prestampa, controllo colore, preflight PDF e coordinamento stampa</p>
+				</div>
+				<div class="card">
+					<h3>🎨 Art Direction</h3>
+					<p>Direzione creativa e gestione progetti dalla concept alla realizzazione finale</p>
+				</div>
+				<div class="card">
+					<h3>✨ Post-Produzione</h3>
+					<p>Ritocco fotografico, fotomontaggio e color grading professionale</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Competenze Tecniche</h2>
+			<div class="skills">
+				<span class="skill-tag">Adobe InDesign</span>
+				<span class="skill-tag">Adobe Photoshop</span>
+				<span class="skill-tag">Adobe Illustrator</span>
+				<span class="skill-tag">Acrobat Pitstop</span>
+				<span class="skill-tag">Kodak Prinergy</span>
+				<span class="skill-tag">Content Station</span>
+				<span class="skill-tag">Fotografia Still-life</span>
+				<span class="skill-tag">Reportage</span>
+				<span class="skill-tag">Controllo Colore</span>
+				<span class="skill-tag">Prestampa CTP</span>
+			</div>
+		</section>
+
+		<section class="section" id="contatti">
+			<h2>Contatti</h2>
+			<p class="bio">
+				Sono disponibile per nuovi progetti e collaborazioni.<br>
+				Contattami per discutere della tua prossima idea creativa!
 			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+			<div class="contact-info">
+				<a href="mailto:alex.dorio1@gmail.com">✉️ Email</a>
+				<a href="tel:+393396539340">📱 +39 339 653 9340</a>
+				<a href="https://wa.me/393396539340">💬 WhatsApp</a>
+				<a href="https://www.linkedin.com/in/alessandro-dorio" target="_blank">💼 LinkedIn</a>
+			</div>
+		</section>
+
 		<Footer />
 	</body>
 </html>
