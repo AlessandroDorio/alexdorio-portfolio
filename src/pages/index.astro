@@ -1,186 +1,281 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-	<head>
-		<BaseHead title="Alessandro Dorio - Grafico Art Director Fotografo" description="Portfolio di Alessandro Dorio - Graphic Designer, Art Director e Fotografo specializzato in grafica pubblicitaria, impaginazione editoriale, fotografia still-life e prestampa." />
-		<style>
-			.hero {
-				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-				color: white;
-				padding: 6rem 2rem;
-				text-align: center;
-			}
-			.hero h1 {
-				font-size: 3rem;
-				margin: 0 0 1rem 0;
-				font-weight: 800;
-			}
-			.hero .subtitle {
-				font-size: 1.5rem;
-				opacity: 0.9;
-				margin-bottom: 2rem;
-			}
-			.hero .cta {
-				display: inline-block;
-				background: white;
-				color: #667eea;
-				padding: 1rem 2rem;
-				border-radius: 50px;
-				text-decoration: none;
-				font-weight: bold;
-				margin-top: 1rem;
-				transition: transform 0.3s;
-			}
-			.hero .cta:hover {
-				transform: scale(1.05);
-			}
-			.section {
-				max-width: 1200px;
-				margin: 4rem auto;
-				padding: 0 2rem;
-			}
-			.section h2 {
-				font-size: 2.5rem;
-				margin-bottom: 2rem;
-				text-align: center;
-				color: #2d3748;
-			}
-			.grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-				gap: 2rem;
-				margin-top: 2rem;
-			}
-			.card {
-				background: white;
-				border-radius: 10px;
-				padding: 2rem;
-				box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-				transition: transform 0.3s;
-			}
-			.card:hover {
-				transform: translateY(-5px);
-			}
-			.card h3 {
-				color: #667eea;
-				margin-bottom: 1rem;
-			}
-			.skills {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 1rem;
-				justify-content: center;
-			}
-			.skill-tag {
-				background: #667eea;
-				color: white;
-				padding: 0.5rem 1.5rem;
-				border-radius: 25px;
-				font-weight: 600;
-			}
-			.bio {
-				max-width: 800px;
-				margin: 0 auto;
-				line-height: 1.8;
-				color: #4a5568;
-				text-align: center;
-			}
-			.contact-info {
-				text-align: center;
-				margin-top: 2rem;
-			}
-			.contact-info a {
-				color: #667eea;
-				font-weight: bold;
-				text-decoration: none;
-				margin: 0 1rem;
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		
-		<section class="hero">
-			<h1>Alessandro Dorio</h1>
-			<p class="subtitle">Grafico Art Director · Fotografo</p>
-			<p>Creatività, precisione e passione al servizio del tuo brand</p>
-			<a href="#contatti" class="cta">Contattami</a>
-		</section>
-
-		<section class="section">
-			<h2>Chi Sono</h2>
-			<p class="bio">
-				Sono un graphic designer e fotografo con oltre 30 anni di esperienza nel settore. 
-				Ho collaborato con alcuni dei maggiori designer, architetti, fotografi e pittori italiani, 
-				specializzandomi in impaginazione editoriale, grafica pubblicitaria, fotografia still-life e reportage.
-				La mia filosofia: coniugare creatività e funzionalità, nel rispetto di tempi e obiettivi.
-			</p>
-		</section>
-
-		<section class="section">
-			<h2>Servizi</h2>
-			<div class="grid">
-				<div class="card">
-					<h3>📐 Grafica Pubblicitaria</h3>
-					<p>Creazione di pagine pubblicitarie, brochure, cataloghi e materiale promozionale d'impatto</p>
-				</div>
-				<div class="card">
-					<h3>📄 Impaginazione Editoriale</h3>
-					<p>Layout professionale per riviste B2B, libri d'arte e pubblicazioni di settore</p>
-				</div>
-				<div class="card">
-					<h3>📸 Fotografia</h3>
-					<p>Still-life e reportage per prodotti moda, calzature, pelletteria e settore industriale</p>
-				</div>
-				<div class="card">
-					<h3>🖨️ Prestampa</h3>
-					<p>Gestione completa del flusso prestampa, controllo colore, preflight PDF e coordinamento stampa</p>
-				</div>
-				<div class="card">
-					<h3>🎨 Art Direction</h3>
-					<p>Direzione creativa e gestione progetti dalla concept alla realizzazione finale</p>
-				</div>
-				<div class="card">
-					<h3>✨ Post-Produzione</h3>
-					<p>Ritocco fotografico, fotomontaggio e color grading professionale</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section">
-			<h2>Competenze Tecniche</h2>
-			<div class="skills">
-				<span class="skill-tag">Adobe InDesign</span>
-				<span class="skill-tag">Adobe Photoshop</span>
-				<span class="skill-tag">Adobe Illustrator</span>
-				<span class="skill-tag">Acrobat Pitstop</span>
-				<span class="skill-tag">Kodak Prinergy</span>
-				<span class="skill-tag">Content Station</span>
-				<span class="skill-tag">Fotografia Still-life</span>
-				<span class="skill-tag">Reportage</span>
-				<span class="skill-tag">Controllo Colore</span>
-				<span class="skill-tag">Prestampa CTP</span>
-			</div>
-		</section>
-
-		<section class="section" id="contatti">
-			<h2>Contatti</h2>
-			<p class="bio">
-				Sono disponibile per nuovi progetti e collaborazioni.<br>
-				Contattami per discutere della tua prossima idea creativa!
-			</p>
-			<div class="contact-info">
-				<a href="mailto:alex.dorio1@gmail.com">✉️ Email</a>
-				<a href="https://www.linkedin.com/in/alessandro-mario-dorio-164850362" target="_blank">💼 LinkedIn</a>
-			</div>
-		</section>
-
-		<Footer />
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Dorio - Grafico Art Director Fotografo</title>
+    <meta name="description" content="Portfolio di Alessandro Dorio - Graphic Designer, Art Director e Fotografo specializzato in impaginazione editoriale">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: white;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Menu fisso nero */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #000;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            color: #FF6600;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 102, 0, 0.1);
+        }
+        
+        /* Contenuto principale */
+        main {
+            margin-top: 80px;
+        }
+        
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #000;
+            border-bottom: 3px solid #FF6600;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #FF6600;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .qualifica {
+            font-size: 1.2rem;
+            color: #FF6600;
+            font-weight: 600;
+            margin: 2rem 0;
+        }
+        
+        .competenze {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        
+        .competenza {
+            background: #f8f8f8;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            border: 2px solid #FF6600;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .servizi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .servizio {
+            padding: 2rem;
+            background: #f8f8f8;
+            border-radius: 8px;
+            border-left: 4px solid #FF6600;
+        }
+        
+        .chi-sono-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .foto-profilo {
+            width: 100%;
+            aspect-ratio: 1;
+            background: #ddd;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        
+        .contatti {
+            background: #f8f8f8;
+            text-align: center;
+        }
+        
+        .contatti-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .contatti-links a {
+            color: #FF6600;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .chi-sono-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .servizi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chi-sono">Chi sono</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="home" class="hero">
+            <h1>Alessandro Dorio</h1>
+            <p class="qualifica">Grafico e Fotografo</p>
+            
+            <div class="competenze">
+                <span class="competenza">Adobe InDesign</span>
+                <span class="competenza">Adobe Photoshop</span>
+                <span class="competenza">Adobe Illustrator</span>
+                <span class="competenza">Acrobat Pitstop</span>
+                <span class="competenza">Fotografia still-life e reportage</span>
+                <span class="competenza">Post-produzione fotografica</span>
+                <span class="competenza">Gestione dei metadati</span>
+            </div>
+        </section>
+        
+        <section id="chi-sono">
+            <h2>Chi sono</h2>
+            <div class="chi-sono-content">
+                <div class="foto-profilo">
+                    Foto utente
+                </div>
+                <div>
+                    <p>Sono un graphic designer e fotografo con oltre 30 anni di esperienza nel settore. Ho collaborato con alcuni dei maggiori designer, architetti, fotografi e pittori italiani, specializzandomi in impaginazione editoriale, grafica pubblicitaria, fotografia still-life e reportage.</p>
+                    <p style="margin-top: 1rem;">La mia filosofia: coniugare creatività e funzionalità, nel rispetto di tempi e obiettivi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="servizi">
+            <h2>Servizi</h2>
+            <div class="servizi-grid">
+                <div class="servizio">
+                    <h3>Impaginazione editoriale</h3>
+                    <p>Layout professionale per riviste, libri d'arte e pubblicazioni di settore con Adobe InDesign.</p>
+                </div>
+                <div class="servizio">
+                    <h3>Grafica pubblicitaria</h3>
+                    <p>Creazione di pagine pubblicitarie, brochure, cataloghi e materiale promozionale d'impatto.</p>
+                </div>
+                <div class="servizio">
+                    <h3>Fotografia professionale</h3>
+                    <p>Still-life e reportage per prodotti moda, calzature, pelletteria e settore industriale.</p>
+                </div>
+                <div class="servizio">
+                    <h3>Post-produzione</h3>
+                    <p>Ritocco fotografico, fotomontaggio e color grading professionale.</p>
+                </div>
+                <div class="servizio">
+                    <h3>Prestampa</h3>
+                    <p>Gestione completa del flusso prestampa, controllo colore e preflight PDF.</p>
+                </div>
+                <div class="servizio">
+                    <h3>Art Direction</h3>
+                    <p>Direzione creativa e gestione progetti dalla concept alla realizzazione finale.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Progetti in arrivo. Contattami per visionare il mio portfolio completo.</p>
+        </section>
+        
+        <section id="contatti" class="contatti">
+            <h2>Contatti</h2>
+            <p>Sono disponibile per nuovi progetti e collaborazioni.</p>
+            <div class="contatti-links">
+                <a href="mailto:alex.dorio1@gmail.com">📧 Email</a>
+                <a href="https://www.linkedin.com/in/alessandro-mario-dorio-164850362/" target="_blank">💼 LinkedIn</a>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
