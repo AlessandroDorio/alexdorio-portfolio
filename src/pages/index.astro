@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessandro Dorio - Grafico Art Director Fotografo</title>
-    <meta name="description" content="Portfolio di Alessandro Dorio - Graphic Designer, Art Director e Fotografo specializzato in impaginazione editoriale">
+    <title>Alessandro Dorio - Grafico e Fotografo</title>
+    <meta name="description" content="Portfolio di Alessandro Dorio - Graphic Designer e Fotografo">
     <style>
         * {
             margin: 0;
@@ -58,119 +58,63 @@
         /* Contenuto principale */
         main {
             margin-top: 80px;
-        }
-        
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #000;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #000;
-            border-bottom: 3px solid #FF6600;
-            padding-bottom: 0.5rem;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #FF6600;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
-        }
-        
-        .subtitle {
-            font-size: 1.5rem;
-            color: #666;
-            margin-bottom: 1rem;
-        }
-        
-        .qualifica {
-            font-size: 1.2rem;
-            color: #FF6600;
-            font-weight: 600;
-            margin: 2rem 0;
-        }
-        
-        .competenze {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-        
-        .competenza {
-            background: #f8f8f8;
-            padding: 0.75rem 1.5rem;
-            border-radius: 25px;
-            border: 2px solid #FF6600;
-            color: #333;
-            font-weight: 500;
-        }
-        
-        .servizi-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        
-        .servizio {
-            padding: 2rem;
-            background: #f8f8f8;
-            border-radius: 8px;
-            border-left: 4px solid #FF6600;
-        }
-        
-        .chi-sono-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 3rem;
-            align-items: start;
-        }
-        
-        .foto-profilo {
-            width: 100%;
-            aspect-ratio: 1;
-            background: #ddd;
-            border-radius: 8px;
+            min-height: calc(100vh - 80px);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #666;
         }
         
-        .contatti {
-            background: #f8f8f8;
+        .home-content {
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+        
+        .qualifica {
+            font-size: 1.5rem;
+            color: #FF6600;
+            font-weight: 600;
+            margin-bottom: 3rem;
+        }
+        
+        .competenze {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        
+        .competenze h2 {
+            font-size: 1.3rem;
+            color: #FF6600;
+            margin-bottom: 1.5rem;
             text-align: center;
         }
         
-        .contatti-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            margin-top: 2rem;
+        .competenze ul {
+            list-style: none;
+            padding: 0;
         }
         
-        .contatti-links a {
+        .competenze li {
+            padding: 0.5rem 0;
+            color: #333;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .competenze li:before {
+            content: "\2022";
             color: #FF6600;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            font-size: 1.5rem;
         }
         
         @media (max-width: 768px) {
@@ -180,15 +124,11 @@
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             
-            .chi-sono-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .servizi-grid {
-                grid-template-columns: 1fr;
+            .qualifica {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -196,86 +136,32 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#chi-sono">Chi sono</a></li>
-            <li><a href="#servizi">Servizi</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contatti">Contatti</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chi-sono">Chi sono</a></li>
+            <li><a href="/servizi">Servizi</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contatti">Contatti</a></li>
         </ul>
     </nav>
     
     <main>
-        <section id="home" class="hero">
+        <div class="home-content">
             <h1>Alessandro Dorio</h1>
             <p class="qualifica">Grafico e Fotografo</p>
             
             <div class="competenze">
-                <span class="competenza">Adobe InDesign</span>
-                <span class="competenza">Adobe Photoshop</span>
-                <span class="competenza">Adobe Illustrator</span>
-                <span class="competenza">Acrobat Pitstop</span>
-                <span class="competenza">Fotografia still-life e reportage</span>
-                <span class="competenza">Post-produzione fotografica</span>
-                <span class="competenza">Gestione dei metadati</span>
+                <h2>Competenze</h2>
+                <ul>
+                    <li>Adobe InDesign</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Acrobat Pitstop</li>
+                    <li>Fotografia still-life e reportage</li>
+                    <li>Post-produzione fotografica</li>
+                    <li>Gestione dei metadati</li>
+                </ul>
             </div>
-        </section>
-        
-        <section id="chi-sono">
-            <h2>Chi sono</h2>
-            <div class="chi-sono-content">
-                <div class="foto-profilo">
-                    Foto utente
-                </div>
-                <div>
-                    <p>Sono un graphic designer e fotografo con oltre 30 anni di esperienza nel settore. Ho collaborato con alcuni dei maggiori designer, architetti, fotografi e pittori italiani, specializzandomi in impaginazione editoriale, grafica pubblicitaria, fotografia still-life e reportage.</p>
-                    <p style="margin-top: 1rem;">La mia filosofia: coniugare creatività e funzionalità, nel rispetto di tempi e obiettivi.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="servizi">
-            <h2>Servizi</h2>
-            <div class="servizi-grid">
-                <div class="servizio">
-                    <h3>Impaginazione editoriale</h3>
-                    <p>Layout professionale per riviste, libri d'arte e pubblicazioni di settore con Adobe InDesign.</p>
-                </div>
-                <div class="servizio">
-                    <h3>Grafica pubblicitaria</h3>
-                    <p>Creazione di pagine pubblicitarie, brochure, cataloghi e materiale promozionale d'impatto.</p>
-                </div>
-                <div class="servizio">
-                    <h3>Fotografia professionale</h3>
-                    <p>Still-life e reportage per prodotti moda, calzature, pelletteria e settore industriale.</p>
-                </div>
-                <div class="servizio">
-                    <h3>Post-produzione</h3>
-                    <p>Ritocco fotografico, fotomontaggio e color grading professionale.</p>
-                </div>
-                <div class="servizio">
-                    <h3>Prestampa</h3>
-                    <p>Gestione completa del flusso prestampa, controllo colore e preflight PDF.</p>
-                </div>
-                <div class="servizio">
-                    <h3>Art Direction</h3>
-                    <p>Direzione creativa e gestione progetti dalla concept alla realizzazione finale.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Progetti in arrivo. Contattami per visionare il mio portfolio completo.</p>
-        </section>
-        
-        <section id="contatti" class="contatti">
-            <h2>Contatti</h2>
-            <p>Sono disponibile per nuovi progetti e collaborazioni.</p>
-            <div class="contatti-links">
-                <a href="mailto:alex.dorio1@gmail.com">📧 Email</a>
-                <a href="https://www.linkedin.com/in/alessandro-mario-dorio-164850362/" target="_blank">💼 LinkedIn</a>
-            </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>
