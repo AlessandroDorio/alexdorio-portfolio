@@ -108,4 +108,60 @@
             border-bottom: 1px solid #f0f0f0;
         }
         
+        .competenze li:before {
+            content: "\2022";
+            color: #FF6600;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            font-size: 1.5rem;
+        }
         
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .qualifica {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chi-sono">Chi sono</a></li>
+            <li><a href="/servizi">Servizi</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contatti">Contatti</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="home-content">
+            <h1>Alessandro Dorio</h1>
+            <p class="qualifica">Grafico e Fotografo</p>
+            
+            <div class="competenze">
+                <h2>Competenze</h2>
+                <ul>
+                    <li>Adobe InDesign</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Acrobat Pitstop</li>
+                    <li>Fotografia still-life e reportage</li>
+                    <li>Post-produzione fotografica</li>
+                    <li>Gestione dei metadati</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
