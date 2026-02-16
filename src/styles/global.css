@@ -2,12 +2,24 @@
    TITOLI PRINCIPALI
 ========================= */
 .page-title {
-  font-size: clamp(1.8rem, 4vw, 2.8rem); /* scala con larghezza schermo */
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 500;
   margin-top: 0;
-  margin-bottom: 3rem; /* spazio uniforme sotto il titolo */
+  margin-bottom: 3rem;
   text-align: left;
   line-height: 1.2;
+  position: relative;
+}
+
+/* sottolineatura arancione premium */
+.page-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, #ff6a00, #ff8c42);
+  border-radius: 2px;
 }
 
 /* =========================
@@ -106,9 +118,15 @@
 
   /* Titoli leggermente più piccoli su mobile */
   .page-title {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-  }
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.page-title::after {
+  width: 40px;
+  height: 2px;
+  margin-top: 10px;
+}
 
   .contact-section {
     padding: 0 20px;
