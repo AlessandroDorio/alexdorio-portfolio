@@ -1,25 +1,26 @@
 /* =========================
    TITOLI PRINCIPALI
 ========================= */
-.page-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 3rem;
-  text-align: left;
-  line-height: 1.2;
-  position: relative;
+h1.page-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: clamp(2rem, 4vw, 3rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  margin-top: 0 !important;
+  margin-bottom: 3rem !important;
+  text-align: left !important;
+  position: relative !important;
+  color: #000 !important;
 }
 
-/* sottolineatura arancione premium */
-.page-title::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 3px;
-  margin-top: 12px;
-  background: linear-gradient(90deg, #ff6a00, #ff8c42);
-  border-radius: 2px;
+h1.page-title::after {
+  content: "" !important;
+  display: block !important;
+  width: 60px !important;
+  height: 3px !important;
+  margin-top: 12px !important;
+  background: linear-gradient(90deg, #ff6a00, #ff8c42) !important;
+  border-radius: 2px !important;
 }
 
 /* =========================
