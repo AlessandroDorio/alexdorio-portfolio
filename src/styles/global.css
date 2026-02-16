@@ -154,8 +154,10 @@ hr {
 	white-space: nowrap;
 	
 }.page-title {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 60px;
+  font-size: 2.5rem;       /* Dimensione unica per tutti i titoli */
+  font-weight: 500;         /* Peso coerente */
+  margin-top: 0;            /* Niente margine superiore casuale */
+  margin-bottom: 60px;     /* Spazio uniforme sotto il titolo */
+  text-align: left;         /* Tutti i titoli allineati a sinistra */
+  line-height: 1.2;         /* Line-height uniforme */
 }
-
