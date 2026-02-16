@@ -27,8 +27,8 @@
 ========================= */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px; /* spazio tra progetti */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px; /* spazio tra progetti */
 }
 
 .portfolio-item img {
