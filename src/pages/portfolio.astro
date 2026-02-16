@@ -64,13 +64,25 @@
         }
 
         /* Titolo pagina */
-        .page-title {
-            font-size: 3rem;
-            color: #000;
-            margin-bottom: 3rem;
-            text-align: left;
-            font-weight: 600;
-        }
+.page-title {
+    font-size: 3rem;
+    color: #000;
+    margin-bottom: 3rem;
+    text-align: left;
+    font-weight: 600;
+    position: relative;
+}
+
+/* linea arancione premium */
+.page-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 12px;
+    background: linear-gradient(90deg, #ff6a00, #ff8c42);
+    border-radius: 2px;
+}
 
         /* Sezioni portfolio */
         .portfolio-section {
@@ -153,7 +165,13 @@
                 margin-bottom: 2rem;
             }
 
-            .section-title {
+           .page-title::after {
+                width: 40px;
+                height: 2px;
+                margin-top: 10px;
+}
+
+.section-title {
                 font-size: 1.5rem;
             }
 
