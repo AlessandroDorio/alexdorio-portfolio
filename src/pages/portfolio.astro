@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio di Alessandro Dorio - Lavori di Advertising, Editorial e Photography">
+
     <style>
         * {
             margin: 0;
@@ -15,13 +16,13 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: white;
             color: #333;
-            line-height: 1.8;
+            line-height: 1.6;
         }
 
-        /* Menu fisso nero */
+        /* NAV */
         nav {
             position: fixed;
             top: 0;
@@ -29,7 +30,6 @@
             background: #000;
             padding: 1rem 2rem;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav ul {
@@ -45,222 +45,222 @@
             color: #FF6600;
             text-decoration: none;
             font-weight: 600;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            transition: background 0.3s;
+            padding: 0.5rem 1rem;
         }
 
         nav a:hover {
-            background: rgba(255, 102, 0, 0.1);
+            opacity: 0.7;
         }
 
-        /* Contenuto principale */
+        /* MAIN */
         main {
-            padding-top: calc(80px + 4rem); /* spazio sotto menu fisso */
+            padding-top: 120px;
             padding-left: 2rem;
             padding-right: 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        /* Titolo pagina */
-.page-title {
-    font-size: 3rem;
-    color: #000;
-    margin-bottom: 3rem;
-    text-align: left;
-    font-weight: 600;
-    position: relative;
-}
+        /* TITLE */
+        .page-title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 4rem;
+            position: relative;
+        }
 
-/* linea arancione premium */
-.page-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    margin-top: 12px;
-    background: linear-gradient(90deg, #ff6a00, #ff8c42);
-    border-radius: 2px;
-}
+        .page-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6a00, #ff8c42);
+            margin-top: 12px;
+            border-radius: 2px;
+        }
 
-        /* Sezioni portfolio */
+        /* SECTION */
         .portfolio-section {
             margin-bottom: 5rem;
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #FF6600;
             margin-bottom: 2rem;
-            text-align: center;
-            font-weight: 600;
             letter-spacing: 2px;
         }
 
+        /* GRID */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
         }
 
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
+        /* ITEM */
         .portfolio-item img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            object-fit: contain;
+            display: block;
         }
 
         .portfolio-caption {
-            width: 100%;
-            background: #d9d9d9;
-            padding: 15px 20px;
-            color: #000;
+            background: #e6e6e6;
+            padding: 12px;
             font-size: 0.9rem;
-            line-height: 1.6;
-            min-height: 120px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            opacity: 0.8;
         }
 
-        .portfolio-caption p {
-            margin: 0;
-        }
-
-        /* MEDIA QUERY MOBILE */
+        /* MOBILE */
         @media (max-width: 768px) {
+
             nav ul {
                 flex-direction: column;
-                gap: 0.5rem;
                 align-items: flex-start;
             }
 
-            nav a {
-                display: block;
-                width: 100%;
-                text-align: left;
+            main {
+                padding-top: 140px;
             }
 
             .page-title {
                 font-size: 2rem;
-                margin-bottom: 2rem;
             }
 
-           .page-title::after {
+            .page-title::after {
                 width: 40px;
                 height: 2px;
-                margin-top: 10px;
-}
-
-.section-title {
-                font-size: 1.5rem;
             }
 
             .gallery {
                 grid-template-columns: 1fr;
-            }
-
-            main {
-                padding-top: calc(80px + 2rem);
+                gap: 20px;
             }
         }
+
     </style>
+
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/chi-sono">Chi sono</a></li>
-            <li><a href="/servizi">Servizi</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contatti">Contatti</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <h1 class="page-title">Portfolio</h1>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/chi-sono">Chi sono</a></li>
+        <li><a href="/servizi">Servizi</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contatti">Contatti</a></li>
+    </ul>
+</nav>
 
-        <section class="portfolio-section">
-             <h2 class="section-title">ADVERTISING</h2>
-            <div class="gallery">
-                <div class="portfolio-item">
-                    <img src="/images/pubb01.png" alt="Advertising 1" style="width: 100%; height: auto; border-radius: 8px;" />               
-                    <div class="portfolio-caption">
-                        <p><strong>Cliente</strong>: Kenda Farben S.p.A.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-                    <img src="/images/pubb02.png" alt="Advertising 2" style="width: 100%; height: auto; border-radius: 8px;" />
-                    <div class="portfolio-caption">
-                        <p><strong>Cliente</strong>: Moro minuterie S.r.l.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
-                   </div> </div>
-                <div class="portfolio-item">
-                    <img src="/images/pubb06.png" alt="Advertising 3" style="width: 100%; height: auto; border-radius: 8px;" />                
-                    <div class="portfolio-caption">
-                        <p><strong>Cliente</strong>: M.P.G. Industria Conciaria S.r.l.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-        </section>
+<main>
 
-                <section class="portfolio-section">
-            <h2 class="section-title">EDITORIAL</h2>
-            <div class="gallery">
-                <div class="portfolio-item">
-                    <img src="/images/Clubino01_cover.png" alt="Editorial 1" style="width: 100%; height: auto; border-radius: 8px;" />
-                <div class="portfolio-caption">
-                        <p><strong>Cliente</strong>: Clubino<br> <strong>Editore</strong>: Lucini Editore.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-                    <img src="/images/Safety.png" alt="Editorial 2" style="width: 100%; height: auto; border-radius: 8px;" />
-                <div class="portfolio-caption">
-                        <p>SAFETY è la rivista di riferimento per il settore delle calzature di sicurezza e industriali sicurezza.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-                    <img src="/images/ARS.png" alt="Editorial 3" style="width: 100%; height: auto; border-radius: 8px;" />
-                <div class="portfolio-caption">
-                        <p>ARSUTORIA è nata nel 1947, da più di 70 anni è la rivista di riferimento per chi fa le scarpe.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-        </section>
+<h1 class="page-title">Portfolio</h1>
 
-                <section class="portfolio-section">
-            <h2 class="section-title">PHOTOGRAPHY</h2>
-            <div class="gallery">
-                <div class="portfolio-item">
-                    <img src="/images/photo_01.jpg" alt="Photography 1" style="width: 100%; height: auto; border-radius: 8px;" />
-                <div class="portfolio-caption">
-                        <p><strong>EXPO</strong>, Milano 2015<br> Canon 60D, Canon EF 17-40mm f/4.0 L USM a 17mm, 1/800 f/9.0, ISO 100.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-                    <img src="/images/photo_02.jpg" alt="Photography 2" style="width: 100%; height: auto; border-radius: 8px;" />
-                <div class="portfolio-caption">
-                        <p>Prova pubblicitaria per <strong>Chanel</strong> <br>Canon 60D, Canon EF 70-200mm f/4 L IS USM, 1/125 f/4.0, ISO 1600.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-                    <img src="/images/photo_03.jpg" alt="Photography 3" style="width: 100%; height: auto; border-radius: 8px;" /> 
-                <div class="portfolio-caption">
-                        <p><strong>Castello Sforzesco</strong>, Milano<br> Canon 60D, Canon EF 17-40mm f/4.0 L USM a 17mm, 1/640 f/7.1, ISO 400.</p>
-                    </div> </div>
-                <div class="portfolio-item">
-        </section>
-    </main>
+
+<!-- ADVERTISING -->
+<section class="portfolio-section">
+
+<h2 class="section-title">ADVERTISING</h2>
+
+<div class="gallery">
+
+<div class="portfolio-item">
+<img src="/images/pubb01.png" alt="">
+<div class="portfolio-caption">
+Cliente: Kenda Farben S.p.A.<br>
+Editore: Edizioni AF S.r.l.
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="/images/pubb02.png" alt="">
+<div class="portfolio-caption">
+Cliente: Moro minuterie S.r.l.<br>
+Editore: Edizioni AF S.r.l.
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="/images/pubb06.png" alt="">
+<div class="portfolio-caption">
+Cliente: M.P.G. Industria Conciaria S.r.l.<br>
+Editore: Edizioni AF S.r.l.
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- EDITORIAL -->
+<section class="portfolio-section">
+
+<h2 class="section-title">EDITORIAL</h2>
+
+<div class="gallery">
+
+<div class="portfolio-item">
+<img src="/images/Clubino01_cover.png" alt="">
+<div class="portfolio-caption">
+Cliente: Clubino<br>
+Editore: Lucini Editore
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="/images/Safety.png" alt="">
+<div class="portfolio-caption">
+Editore: Edizioni AF S.r.l.
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="/images/ARS.png" alt="">
+<div class="portfolio-caption">
+Editore: Edizioni AF S.r.l.
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- PHOTOGRAPHY -->
+<section class="portfolio-section">
+
+<h2 class="section-title">PHOTOGRAPHY</h2>
+
+<div class="gallery">
+
+<div class="portfolio-item">
+<img src="/images/photo_01.jpg" alt="">
+<div class="portfolio-caption">
+EXPO, Milano 2015
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="/images/photo_02.jpg" alt="">
+<div class="portfolio-caption">
+Prova pubblicitaria Chanel
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="/images/photo_03.jpg" alt="">
+<div class="portfolio-caption">
+Castello Sforzesco, Milano
+</div>
+</div>
+
+</div>
+</section>
+
+
+</main>
+
 </body>
 </html>
