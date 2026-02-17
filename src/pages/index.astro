@@ -1,4 +1,6 @@
 ---
+// Altri import esistenti...
+import BuilderRender from '../components/BuilderRender.jsx';
 ---
 
 <!DOCTYPE html>
@@ -138,7 +140,7 @@
     
     <main>
         <div class="home-content">
-                <img src="/images/logo.png" alt="AQ Ideas Logo" class="logo" />
+            <img src="/images/logo.png" alt="AQ Ideas Logo" class="logo" />
             <h1>Alessandro Dorio</h1>
             <p class="qualifica">Grafico e Fotografo</p>
             
@@ -146,6 +148,11 @@
                 <ul>
                     <li>Impaginazione grafica, progetto identità visive, materiali di comunicazione online e offline</li>
                 </ul>
+            </div>
+
+            <!-- INSERISCI QUI IL COMPONENTE DI BUILDER -->
+            <div style="margin-top: 50px;">
+                <BuilderRender model="page" client:only="react" />
             </div>
         </div>
     </main>
