@@ -1,0 +1,170 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contattami per collaborazioni e progetti di graphic design e fotografia">
+<title>Contatti - Alessandro Dorio</title>
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background:#fff;
+  color:#333;
+  line-height:1.6;
+}
+nav {
+  position: fixed;
+  top:0;
+  width:100%;
+  background:#000;
+  padding:1rem 2rem;
+  z-index:1000;
+}
+nav ul {
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+nav a {
+  color:#FF6600;
+  text-decoration:none;
+  font-weight:600;
+  padding:0.5rem 1.5rem;
+  border-radius:4px;
+  transition:background 0.3s;
+}
+nav a:hover { background: rgba(255,102,0,0.1); }
+
+main {
+  padding-top:120px;
+  padding-left:2rem;
+  padding-right:2rem;
+  max-width:800px;
+  margin:0 auto;
+}
+
+h1 {
+  font-size:3rem;
+  margin-bottom:3rem;
+  text-align:left;
+  color:#000;
+  border-bottom:3px solid #FF6600;
+  padding-bottom:10px;
+}
+
+.contact-section {
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  margin-bottom:3rem;
+}
+
+.contact-section h2 {
+  font-size:1.5rem;
+  color:#FF6600;
+  margin-bottom:1rem;
+  font-weight:600;
+}
+
+.contact-info {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:1rem 1.5rem;
+  background:#f9f9f9;
+  border-left:4px solid #FF6600;
+  border-radius:4px;
+}
+
+.contact-info-icon {
+  font-size:1.8rem;
+  min-width:30px;
+}
+
+.contact-info-content p {
+  margin:0;
+}
+
+.contact-info-content a {
+  color:#FF6600;
+  text-decoration:none;
+  font-weight:600;
+}
+.contact-info-content a:hover { text-decoration:underline; }
+
+.social-links {
+  display:flex;
+  gap:1.5rem;
+  flex-wrap:wrap;
+}
+
+.social-links a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:50px;
+  height:50px;
+  background:#FF6600;
+  color:white;
+  border-radius:50%;
+  text-decoration:none;
+  font-weight:600;
+  transition:background 0.3s;
+}
+.social-links a:hover { background:#e55a00; }
+
+@media(max-width:768px){
+  nav ul { flex-direction:column; gap:0.5rem; }
+  main { padding:2rem 1rem; }
+  h1 { font-size:2rem; }
+}
+</style>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/chi-sono">Chi sono</a></li>
+    <li><a href="/servizi">Servizi</a></li>
+    <li><a href="/portfolio">Portfolio</a></li>
+    <li><a href="/contatti">Contatti</a></li>
+  </ul>
+</nav>
+
+<main>
+<h1 class="page-title">Contatti</h1>
+
+<section class="contact-section">
+<h2>Informazioni di Contatto</h2>
+
+<div class="contact-info">
+  <div class="contact-info-icon">📧</div>
+  <div class="contact-info-content">
+    <p><a href="mailto:alex.dorio1@gmail.com">alex.dorio1@gmail.com</a></p>
+  </div>
+</div>
+
+<div class="contact-info">
+  <div class="contact-info-icon">in</div>
+  <div class="contact-info-content">
+    <p><a href="https://www.linkedin.com/in/alessandro-mario-dorio-164850362/" target="_blank">LinkedIn</a></p>
+  </div>
+</div>
+
+</section>
+</main>
+</body>
+</html>

@@ -6,8 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Alessandro Dorio</title>
     <meta name="description" content="Portfolio di Alessandro Dorio - Lavori di Advertising, Editorial e Photography">
+
     <style>
         * {
             margin: 0;
@@ -16,13 +16,13 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: white;
             color: #333;
             line-height: 1.6;
         }
 
-        /* Menu fisso nero */
+        /* NAV */
         nav {
             position: fixed;
             top: 0;
@@ -30,14 +30,13 @@
             background: #000;
             padding: 1rem 2rem;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -46,70 +45,64 @@
             color: #FF6600;
             text-decoration: none;
             font-weight: 600;
-            padding: 0.5rem 1.5rem;
-            border-radius: 4px;
-            transition: background 0.3s;
+            padding: 0.5rem 1rem;
         }
 
         nav a:hover {
-            background: rgba(255, 102, 0, 0.1);
+            opacity: 0.7;
         }
 
-        /* Contenuto principale */
+        /* MAIN */
         main {
-            margin-top: 80px;
-            padding: 4rem 2rem;
+            padding-top: 120px;
+            padding-left: 2rem;
+            padding-right: 2rem;
             max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
         }
 
-        h1 {
+        /* TITLE */
+        .page-title {
             font-size: 3rem;
-            margin-bottom: 3rem;
-            text-align: center;
-            color: #000;
+            font-weight: 600;
+            margin-bottom: 4rem;
+            position: relative;
         }
 
+        .page-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6a00, #ff8c42);
+            margin-top: 12px;
+            border-radius: 2px;
+        }
+
+        /* SECTION */
         .portfolio-section {
             margin-bottom: 5rem;
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: #FF6600;
             margin-bottom: 2rem;
-            text-align: center;
-            font-weight: 600;
             letter-spacing: 2px;
         }
 
+        /* GRID */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
         }
 
-        .portfolio-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            background: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
+        /* ITEM */
         .portfolio-item img {
-            width: auto%;
-            height: 600px%;
-            object-fit: contain;
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         .portfolio-caption {
@@ -137,26 +130,37 @@
             text-align: center;
         }
 
+        /* MOBILE */
         @media (max-width: 768px) {
+
             nav ul {
                 flex-direction: column;
-                gap: 0.5rem;
+                align-items: flex-start;
             }
 
-            h1 {
+            main {
+                padding-top: 140px;
+            }
+
+            .page-title {
                 font-size: 2rem;
             }
 
-            .section-title {
-                font-size: 1.5rem;
+            .page-title::after {
+                width: 40px;
+                height: 2px;
             }
 
             .gallery {
                 grid-template-columns: 1fr;
+                gap: 20px;
             }
         }
+
     </style>
+
 </head>
+
 <body>
     <nav>
         <ul>
