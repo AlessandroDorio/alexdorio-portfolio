@@ -106,10 +106,33 @@
         }
 
         .portfolio-caption {
-            background: #e6e6e6;
-            padding: 12px;
+            width: 100%;
+            background: rgba(217, 217, 217, 1);
+            padding: 15px 20px;
+            color: #000;
             font-size: 0.9rem;
-            opacity: 0.8;
+            line-height: 1.6;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: auto;
+        }
+
+        .portfolio-caption p {
+            margin: 0;
+            padding: 0;
+            margin-left: 74px;
+            margin-right: 74px;
+        }
+
+        .placeholder {
+            color: #999contain
+            font-size: 1.2rem;
+            text-align: center;
         }
 
         /* MOBILE */
@@ -144,123 +167,80 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chi-sono">Chi sono</a></li>
+            <li><a href="/servizi">Servizi</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contatti">Contatti</a></li>
+        </ul>
+    </nav>
 
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/chi-sono">Chi sono</a></li>
-        <li><a href="/servizi">Servizi</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contatti">Contatti</a></li>
-    </ul>
-</nav>
+    <main>
+        <h1 style="text-align: left; border-bottom: 3px solid #FF6600; padding-bottom: 10px; margin-bottom: 40px; font-size: 40px;">Portfolio</h1>
+        <section class="portfolio-section">
+            <h2 class="section-title">ADVERTISING</h2>
+            <div class="gallery">
+                <div class="portfolio-item">
+                    <img src="/images/pubb01.png" alt="Advertising 1" style="width: 100%; height: auto; border-radius: 8px;" />               
+                    <div class="portfolio-caption">
+                        <p><strong>Cliente</strong>: Kenda Farben S.p.A.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+                    <img src="/images/pubb02.png" alt="Advertising 2" style="width: 100%; height: auto; border-radius: 8px;" />
+                    <div class="portfolio-caption">
+                        <p><strong>Cliente</strong>: Moro minuterie S.r.l.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
+                   </div> </div>
+                <div class="portfolio-item">
+                    <img src="/images/pubb06.png" alt="Advertising 3" style="width: 100%; height: auto; border-radius: 8px;" />                
+                    <div class="portfolio-caption">
+                        <p><strong>Cliente</strong>: M.P.G. Industria Conciaria S.r.l.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+        </section>
 
-<main>
+                <section class="portfolio-section">
+            <h2 class="section-title">EDITORIAL</h2>
+            <div class="gallery">
+                <div class="portfolio-item">
+                    <img src="/images/Clubino01_cover.png" alt="Editorial 1" style="width: 100%; height: auto; border-radius: 8px;" />
+                <div class="portfolio-caption">
+                        <p><strong>Cliente</strong>: Clubino<br> <strong>Editore</strong>: Lucini Editore.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+                    <img src="/images/Safety.png" alt="Editorial 2" style="width: 100%; height: auto; border-radius: 8px;" />
+                <div class="portfolio-caption">
+                        <p>SAFETY è la rivista di riferimento per il settore delle calzature di sicurezza e industriali sicurezza.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+                    <img src="/images/ARS.png" alt="Editorial 3" style="width: 100%; height: auto; border-radius: 8px;" />
+                <div class="portfolio-caption">
+                        <p>ARSUTORIA è nata nel 1947, da più di 70 anni è la rivista di riferimento per chi fa le scarpe.<br> <strong>Editore</strong>: Edizioni AF S.r.l.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+        </section>
 
-<h1 class="page-title">Portfolio</h1>
-
-
-<!-- ADVERTISING -->
-<section class="portfolio-section">
-
-<h2 class="section-title">ADVERTISING</h2>
-
-<div class="gallery">
-
-<div class="portfolio-item">
-<img src="/images/pubb01.png" alt="">
-<div class="portfolio-caption">
-Cliente: Kenda Farben S.p.A.<br>
-Editore: Edizioni AF S.r.l.
-</div>
-</div>
-
-<div class="portfolio-item">
-<img src="/images/pubb02.png" alt="">
-<div class="portfolio-caption">
-Cliente: Moro minuterie S.r.l.<br>
-Editore: Edizioni AF S.r.l.
-</div>
-</div>
-
-<div class="portfolio-item">
-<img src="/images/pubb06.png" alt="">
-<div class="portfolio-caption">
-Cliente: M.P.G. Industria Conciaria S.r.l.<br>
-Editore: Edizioni AF S.r.l.
-</div>
-</div>
-
-</div>
-</section>
-
-
-<!-- EDITORIAL -->
-<section class="portfolio-section">
-
-<h2 class="section-title">EDITORIAL</h2>
-
-<div class="gallery">
-
-<div class="portfolio-item">
-<img src="/images/Clubino01_cover.png" alt="">
-<div class="portfolio-caption">
-Cliente: Clubino<br>
-Editore: Lucini Editore
-</div>
-</div>
-
-<div class="portfolio-item">
-<img src="/images/Safety.png" alt="">
-<div class="portfolio-caption">
-Editore: Edizioni AF S.r.l.
-</div>
-</div>
-
-<div class="portfolio-item">
-<img src="/images/ARS.png" alt="">
-<div class="portfolio-caption">
-Editore: Edizioni AF S.r.l.
-</div>
-</div>
-
-</div>
-</section>
-
-
-<!-- PHOTOGRAPHY -->
-<section class="portfolio-section">
-
-<h2 class="section-title">PHOTOGRAPHY</h2>
-
-<div class="gallery">
-
-<div class="portfolio-item">
-<img src="/images/photo_01.jpg" alt="">
-<div class="portfolio-caption">
-EXPO, Milano 2015
-</div>
-</div>
-
-<div class="portfolio-item">
-<img src="/images/photo_02.jpg" alt="">
-<div class="portfolio-caption">
-Prova pubblicitaria Chanel
-</div>
-</div>
-
-<div class="portfolio-item">
-<img src="/images/photo_03.jpg" alt="">
-<div class="portfolio-caption">
-Castello Sforzesco, Milano
-</div>
-</div>
-
-</div>
-</section>
-
-
-</main>
-
+                <section class="portfolio-section">
+            <h2 class="section-title">PHOTOGRAPHY</h2>
+            <div class="gallery">
+                <div class="portfolio-item">
+                    <img src="/images/photo_01.jpg" alt="Photography 1" style="width: 100%; height: auto; border-radius: 8px;" />
+                <div class="portfolio-caption">
+                        <p><strong>EXPO</strong>, Milano 2015<br> Canon 60D, Canon EF 17-40mm f/4.0 L USM a 17mm, 1/800 f/9.0, ISO 100.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+                    <img src="/images/photo_02.jpg" alt="Photography 2" style="width: 100%; height: auto; border-radius: 8px;" />
+                <div class="portfolio-caption">
+                        <p>Prova pubblicitaria per <strong>Chanel</strong> <br>Canon 60D, Canon EF 70-200mm f/4 L IS USM, 1/125 f/4.0, ISO 1600.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+                    <img src="/images/photo_03.jpg" alt="Photography 3" style="width: 100%; height: auto; border-radius: 8px;" /> 
+                <div class="portfolio-caption">
+                        <p><strong>Castello Sforzesco</strong>, Milano<br> Canon 60D, Canon EF 17-40mm f/4.0 L USM a 17mm, 1/640 f/7.1, ISO 400.</p>
+                    </div> </div>
+                <div class="portfolio-item">
+        </section>
+    </main>
 </body>
 </html>
